@@ -1,8 +1,15 @@
 package com.company;
 
 public class Point {
+
     private int x;
     private int y;
+
+    public Point(int x,int y){
+        this.x=x;
+        this.y=y;
+    }
+
 
     public int x(){
         return x;
@@ -13,7 +20,7 @@ public class Point {
 
 
     public double distanceTo(Point z){
-        return Math.sqrt((z.x-x)^2 + (z.y-y)^2);
+        return Math.sqrt((z.x-x)*(z.x-x) + (z.y-y)*(z.y-y));
     }
 
     public int squareDistanceTo(Point z)

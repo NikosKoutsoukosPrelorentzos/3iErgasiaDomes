@@ -6,7 +6,7 @@ public class Rectangle{
     private int xmax;
     private int ymax;
 
-    public void Rectangle(int xmi,int ymi, int xma,int yma){
+    public Rectangle(int xmi,int ymi, int xma,int yma){
         xmin=xmi;
         ymin=ymi;
         xmax=xma;
@@ -27,7 +27,7 @@ public class Rectangle{
     }
 
     public boolean contains(Point p){
-        if(xmin>=p.x()&&xmax<=p.x()&&ymin>=p.y()&&ymax<=p.y()){
+        if(xmin<=p.x() && xmax>=p.x() && ymin<=p.y() && ymax>=p.y()){
             return true;
         }
             return false;
@@ -45,38 +45,39 @@ public class Rectangle{
 
     public double distanceToRectangle(Point p){
         if(p.x()>=xmax && p.y()>=ymax){
-            return Math.sqrt((p.x()-xmax)^2 + (p.y()-ymax)^2);
+            return Math.sqrt((p.x()-xmax)*(p.x()-xmax) + (p.y()-ymax)*(p.y()-ymax));
         }
         if(p.x()<=xmin && p.y()>=xmax){
-            return Math.sqrt((p.x()-xmin)^2 + (p.y()-ymax)^2);
+            return Math.sqrt((p.x()-xmin)*(p.x()-xmin) + (p.y()-ymax)*(p.y()-ymax));
         }
         if(p.x()<=xmin && p.y()<=ymin){
-            return Math.sqrt((p.x()-xmin)^2 + (p.y()-ymin)^2);
+            return Math.sqrt((p.x()-xmin)*(p.x()-xmin) + (p.y()-ymin)*(p.y()-ymin));
         }
         if(p.x()>=xmax && p.y()<= ymin){
-            return Math.sqrt((p.x()-xmax)^2 + (p.y()-ymin)^2);
+            return Math.sqrt((p.x()-xmax)*(p.x()-xmax) + (p.y()-ymin)*(p.y()-ymin));
         }
         if(p.x()>xmax && p.y()>ymin && p.y()<xmax){
-            return Math.sqrt(((p.x()-xmax)^2 + (p.y()-ymax)^2)-(((-((p.x()-xmax)^2 + (p.y()-ymin)^2))+((p.x()-xmax)^2 + (p.y()-ymax)^2)+(ymax-ymin)^2)/2*(ymax-ymin))^2);
+            return p.x()-xmax;
         }
-        return 0;
+        if(p.y()>ymax && p.x()>xmin && p.x()<xmax){
+            return p.y()-ymax;
+        }
+        if (p.x()<xmin && p.y()>ymin && p.y()<xmax){
+            return xmin - p.x();
+        }
+        if(p.y()<ymin && p.x()>xmin && p.x()<xmax){
+            return ymin - p.y();
+        }
+        if(contains(p)){
+            return 0;
+        }
+        return 1;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    public int squaredistanceToRectangle(Point p){
+        return (int) Math.sqrt(distanceToRectangle(p));
+    }
+    public String toString(){
+        return "["+ xmin + "," + xmax + "] x [" + ymin + "," + ymax +"]";
+    }
 }
