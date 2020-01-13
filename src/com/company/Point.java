@@ -13,13 +13,12 @@ public class Point {
 
 
     public double distanceTo(Point z){
-        double d;
-        d = Math.sqrt((x-z.x)*(x-z.x)+(y-z.y)*(y-z.y));
-        return d;
+        return Math.sqrt((z.x-x)^2 + (z.y-y)^2);
     }
 
-    public int squareDistanceTo(Point z){
-        return (int) (distanceTo(z)*distanceTo(z));
+    public int squareDistanceTo(Point z)
+    {
+        return (int) Math.pow(distanceTo(z),2);
     }
 
     public String toString(){
