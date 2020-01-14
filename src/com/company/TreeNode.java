@@ -1,16 +1,16 @@
 package com.company;
 
-public class Treenode {
+public class TreeNode {
 
     private Point item;
-    private Treenode l;
-    private Treenode r;
+    private TreeNode l;
+    private TreeNode r;
 
-    public Treenode(){
+    public TreeNode(){
         
     }
 
-    public Treenode(Point item){
+    public TreeNode(Point item){
         this.item=item;
     }
 
@@ -22,19 +22,19 @@ public class Treenode {
         this.item=item;
     }
 
-    public Treenode getLeft(){
+    public TreeNode getLeft(){
         return l;
     }
 
-    public void setLeft(Treenode l){
+    public void setLeft(TreeNode l){
         this.l=l;
     }
 
-    public Treenode getRight(){
+    public TreeNode getRight(){
         return r;
     }
 
-    public void setRight(Treenode r){
+    public void setRight(TreeNode r){
         this.r=r;
     }
 
