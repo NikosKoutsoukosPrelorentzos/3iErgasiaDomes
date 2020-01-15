@@ -4,7 +4,6 @@
     <list default="true" id="08335e1d-7ea8-4487-b87f-6f0c00e1fcfd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/TreeNode.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/TwoDTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/TwoDTree.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,38 +93,38 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="535" y="149" width="840" height="807" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1579093194149" />
-    <state width="1874" height="244" key="GridCell.Tab.0.bottom" timestamp="1579093104033">
+    <state width="1874" height="244" key="GridCell.Tab.0.bottom" timestamp="1579095594974">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="244" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1579093104033" />
-    <state width="1874" height="244" key="GridCell.Tab.0.center" timestamp="1579093104032">
+    <state width="1874" height="244" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1579095594974" />
+    <state width="1874" height="244" key="GridCell.Tab.0.center" timestamp="1579095594973">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="244" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1579093104032" />
-    <state width="1874" height="244" key="GridCell.Tab.0.left" timestamp="1579093104031">
+    <state width="1874" height="244" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1579095594973" />
+    <state width="1874" height="244" key="GridCell.Tab.0.left" timestamp="1579095594973">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="244" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1579093104031" />
-    <state width="1874" height="244" key="GridCell.Tab.0.right" timestamp="1579093104032">
+    <state width="1874" height="244" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1579095594973" />
+    <state width="1874" height="244" key="GridCell.Tab.0.right" timestamp="1579095594974">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="244" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1579093104032" />
-    <state width="914" height="288" key="GridCell.Tab.1.bottom" timestamp="1579092016080">
+    <state width="1874" height="244" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1579095594974" />
+    <state width="1874" height="288" key="GridCell.Tab.1.bottom" timestamp="1579094985930">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="914" height="288" key="GridCell.Tab.1.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1579092016080" />
-    <state width="914" height="288" key="GridCell.Tab.1.center" timestamp="1579092016080">
+    <state width="1874" height="288" key="GridCell.Tab.1.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1579094985930" />
+    <state width="1874" height="288" key="GridCell.Tab.1.center" timestamp="1579094985929">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="914" height="288" key="GridCell.Tab.1.center/0.27.1920.1053@0.27.1920.1053" timestamp="1579092016080" />
-    <state width="914" height="288" key="GridCell.Tab.1.left" timestamp="1579092016079">
+    <state width="1874" height="288" key="GridCell.Tab.1.center/0.27.1920.1053@0.27.1920.1053" timestamp="1579094985929" />
+    <state width="1874" height="288" key="GridCell.Tab.1.left" timestamp="1579094985928">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="914" height="288" key="GridCell.Tab.1.left/0.27.1920.1053@0.27.1920.1053" timestamp="1579092016079" />
-    <state width="914" height="288" key="GridCell.Tab.1.right" timestamp="1579092016080">
+    <state width="1874" height="288" key="GridCell.Tab.1.left/0.27.1920.1053@0.27.1920.1053" timestamp="1579094985928" />
+    <state width="1874" height="288" key="GridCell.Tab.1.right" timestamp="1579094985929">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="914" height="288" key="GridCell.Tab.1.right/0.27.1920.1053@0.27.1920.1053" timestamp="1579092016080" />
+    <state width="1874" height="288" key="GridCell.Tab.1.right/0.27.1920.1053@0.27.1920.1053" timestamp="1579094985929" />
     <state x="616" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1579088737476">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -140,11 +139,11 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/com/company/TwoDTree.java</url>
-          <line>52</line>
-          <properties class="com.company.TwoDTree" method="insertRec">
+          <line>96</line>
+          <properties class="com.company.TwoDTree" method="searchRec">
             <option name="EMULATED" value="true" />
           </properties>
-          <option name="timeStamp" value="4" />
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

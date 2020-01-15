@@ -19,6 +19,7 @@ public class Main {
         Point x5 = new Point(70,2);
         Point x6 = new Point(1,2);
         Point x7 = new Point(2,7);
+        Point x8 = new Point(56,3);
 
 
 
@@ -33,6 +34,14 @@ public class Main {
         test.insert(x5);
         test.insert(x6);
         test.insert(x7);
+
+        if(test.search(x3)){
+            System.out.println("Contains");
+        }else {
+            System.out.println("not contains");
+        }
+
+
 
         test.printPostorder(test.getHead());
     }

@@ -1,5 +1,7 @@
 package com.company;
 
+import java.sql.SQLOutput;
+
 public class TwoDTree {
 
     private class TreeNode {
@@ -56,6 +58,7 @@ public class TwoDTree {
             return head;
         }
          if(p.x() == head.getData().x() && p.y() == head.getData().y()){
+             //System.out.println("We have point " + p.toString() + "inside our tree!!!");
              return head;
          }
         if(p.x() < head.getData().x() && LorR==0){
@@ -87,8 +90,37 @@ public class TwoDTree {
 
 
     public boolean search(Point p){
-        return true;
+        return searchRec(head, p, 0);
     }
+
+
+    boolean searchRec(TreeNode head,Point p,int LorR){
+        if(head == null){
+           // head = new TreeNode(p);
+            return false;
+        }
+        if(p.x() == head.getData().x() && p.y() == head.getData().y()){
+            //System.out.println("We have point " + p.toString() + "inside our tree!!!");
+            return true;
+        }
+        if(p.x() < head.getData().x() && LorR==0){
+           return searchRec(head.l,p,1);
+        }
+        if (p.x() >= head.getData().x() && LorR==0){
+           return searchRec(head.r,p,1);
+        }
+        if (p.y() < head.getData().y() && LorR == 1){
+            return searchRec(head.l,p,0);
+        }
+        if (p.y() >= head.getData().y() && LorR == 1){
+            return searchRec(head.r,p,0);
+        }
+        return false;
+    }
+
+
+
+
     public Point nearestNeighbor(Point p){
         return p;
     }
