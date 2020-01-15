@@ -12,16 +12,18 @@ public class Main {
 
 
          */
-        Point x1 = new Point(5,7);
-        Point x2 = new Point(4,3);
-        Point x3 = new Point(7,6);
-        Point x4 = new Point(5,12);
-        Point x5 = new Point(70,2);
+        Point x1 = new Point(7,8);
+        Point x2 = new Point(2,6);
+        Point x3 = new Point(5,5);
+        Point x4 = new Point(3,4);
+        Point x5 = new Point(5,3);
         Point x6 = new Point(1,2);
-        Point x7 = new Point(2,7);
-        Point x8 = new Point(56,3);
+        Point x7 = new Point(3,1);
+        Point x8 = new Point(4,4);
 
 
+        //System.out.println(x8.distanceTo(x5));
+        //System.out.println(x8.distanceTo(x6));
 
 
 
@@ -34,6 +36,7 @@ public class Main {
         test.insert(x5);
         test.insert(x6);
         test.insert(x7);
+        //test.insert(x8);
 
         if(test.search(x3)){
             System.out.println("Contains");
@@ -43,6 +46,8 @@ public class Main {
 
 
 
+       //test.printPostorder(test.getHead());
+        System.out.println(test.nearestNeighbor(x8).toString());
         test.printPostorder(test.getHead());
     }
 }

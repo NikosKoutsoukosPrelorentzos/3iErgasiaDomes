@@ -122,13 +122,40 @@ public class TwoDTree {
 
 
     public Point nearestNeighbor(Point p){
-        return p;
+        nearestNeighborRec(head,p,999999999);
+
+        return closest;
     }
-    /*public List<Point> rangeSearch(Rectangle rect){
+
+    Point closest = new Point();
+
+    void nearestNeighborRec(TreeNode node, Point p,double min){
+        if (node == null){
+
+            return;
+        }
+        double distance = node.getData().distanceTo(p);
+
+        if(distance<min){
+            min=distance;
+            closest.set(node.getData().x(),node.getData().y());
+        }
+
+        nearestNeighborRec(node.r, p , min);
+        nearestNeighborRec(node.l, p , min);
+
+        //nearestNeighborRec(node.r, p , min);
+
+       // System.out.println(closest.toString());
+        //System.out.println(min);
 
     }
 
-     */
+
+
+
+
+
 
 
 
