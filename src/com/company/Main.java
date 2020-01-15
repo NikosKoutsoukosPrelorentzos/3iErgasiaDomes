@@ -13,12 +13,12 @@ public class Main {
 
          */
         Point x1 = new Point(5,7);
-        Point x2 = new Point(7,12);
-        Point x3 = new Point(8,5);
-        Point x4 = new Point(12,23);
-        Point x5 = new Point(34,2);
-        Point x6 = new Point(21,4);
-        Point x7 = new Point(11,20);
+        Point x2 = new Point(4,3);
+        Point x3 = new Point(7,6);
+        Point x4 = new Point(5,12);
+        Point x5 = new Point(70,2);
+        Point x6 = new Point(1,2);
+        Point x7 = new Point(2,7);
 
 
 

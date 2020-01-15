@@ -19,7 +19,7 @@ public class TwoDTree {
 
 
 
-    private TreeNode head;
+    public TreeNode head;
 
     public TreeNode getHead(){
         return head;
@@ -28,6 +28,7 @@ public class TwoDTree {
 
 
     public TwoDTree(){
+
         head = null;
     }
 
@@ -43,45 +44,33 @@ public class TwoDTree {
 
 
     public void insert (Point p){
-         insertRec(head, p, 0);
+        head = insertRec(head, p, 0);
+      //  System.out.println(head.l.getData().x());
     }
 
 
 
-    int insertRec(TreeNode pop,Point p,int LorR){
-        if(head==null){
-            // System.out.println("A");
+     TreeNode insertRec(TreeNode head,Point p,int LorR){
+        if(head == null){
             head = new TreeNode(p);
-            return 0;
+            return head;
         }
-        if(pop==null){
-            // System.out.println("A");
-            pop = new TreeNode(p);
-            return 1;
-
+         if(p.x() == head.getData().x() && p.y() == head.getData().y()){
+             return head;
+         }
+        if(p.x() < head.getData().x() && LorR==0){
+            head.l = insertRec(head.l,p,1);
         }
-
-
-        if(p.x() < pop.getData().x() && LorR == 0){
-            insertRec(pop.l,p,1);
-        }else if (p.x() > pop.getData().x() && LorR == 0){
-            insertRec(pop.r,p,1);
+        if (p.x() >= head.getData().x() && LorR==0){
+            head.r = insertRec(head.r,p,1);
         }
-
-
-        if(p.y()< pop.getData().y() && LorR==1){
-            insertRec(pop.r, p,0);
-        }else if(p.y()> pop.getData().y() && LorR==1){
-            insertRec(pop.r, p,0);
+        if (p.y() < head.getData().y() && LorR == 1){
+            head.l = insertRec(head.l,p,0);
         }
-
-
-        if (p.x()==pop.getData().x() && p.y()==pop.getData().y()){
-            System.out.println("Wrong add. We already hahe this element!");
-            return 0;
+        if (p.y() >= head.getData().y() && LorR == 1){
+            head.r = insertRec(head.r,p,0);
         }
-
-        return 1;
+        return head;
     }
 
 
